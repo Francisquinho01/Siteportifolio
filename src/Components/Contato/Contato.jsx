@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Contato() {
   return (
@@ -7,17 +8,19 @@ export default function Contato() {
         <Top>
           <Left>
             <Title>Vamos conversar?</Title>
+
             <Desc>
-              Se você tem um projeto em mente — web, vídeo ou técnico — me chama.
-              Que eu respondo.
+              Se você tem um projeto em mente, me
+              chama. Que eu respondo.
             </Desc>
 
             <CTAGroup>
-              <Primary href="mailto:SEUEMAIL@EMAIL.COM">
+              <Primary href="mailto:ogserpacsm@outlook.com">
                 Enviar email →
               </Primary>
+
               <Ghost
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/5535910038088"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -34,10 +37,9 @@ export default function Contato() {
                 rel="noreferrer"
                 aria-label="GitHub"
               >
-                <Icon
-                  src="https://placehold.co/48x48/png?text=GH"
-                  alt="GitHub"
-                />
+                <IconBox>
+                  <FaGithub />
+                </IconBox>
                 <span>GitHub</span>
               </Social>
 
@@ -47,10 +49,9 @@ export default function Contato() {
                 rel="noreferrer"
                 aria-label="LinkedIn"
               >
-                <Icon
-                  src="https://placehold.co/48x48/png?text=IN"
-                  alt="LinkedIn"
-                />
+                <IconBox>
+                  <FaLinkedin />
+                </IconBox>
                 <span>LinkedIn</span>
               </Social>
 
@@ -60,10 +61,9 @@ export default function Contato() {
                 rel="noreferrer"
                 aria-label="Instagram"
               >
-                <Icon
-                  src="https://placehold.co/48x48/png?text=IG"
-                  alt="Instagram"
-                />
+                <IconBox>
+                  <FaInstagram />
+                </IconBox>
                 <span>Instagram</span>
               </Social>
             </Socials>
@@ -72,8 +72,8 @@ export default function Contato() {
 
         <Bottom>
           <Small>
-            © {new Date().getFullYear()} Francisco Oliveira •
-            Desenvolvido com React + Vite
+            © {new Date().getFullYear()} Francisco Oliveira • Desenvolvido com
+            React + Vite
           </Small>
         </Bottom>
       </Inner>
@@ -148,8 +148,11 @@ const Primary = styled.a`
   color: #0b0f19;
   background: rgba(255, 255, 255, 0.92);
 
+  transition: 0.25s ease;
+
   &:hover {
     background: #ffffff;
+    transform: translateY(-2px);
   }
 `;
 
@@ -165,8 +168,11 @@ const Ghost = styled.a`
   background: rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(255, 0, 90, 0.22);
 
+  transition: 0.25s ease;
+
   &:hover {
     color: #ff005a;
+    transform: translateY(-2px);
     box-shadow: 0 0 18px rgba(255, 0, 90, 0.18);
   }
 `;
@@ -193,15 +199,21 @@ const Social = styled.a`
   font-size: 13px;
   font-weight: 800;
 
+  transition: 0.25s ease;
+
   &:hover {
     color: #ff005a;
   }
 `;
 
-const Icon = styled.img`
+const IconBox = styled.div`
   width: 48px;
   height: 48px;
   border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 1px solid rgba(255, 0, 90, 0.22);
   background: rgba(0, 0, 0, 0.4);
@@ -209,8 +221,13 @@ const Icon = styled.img`
 
   transition: 0.25s ease;
 
+  svg {
+    font-size: 24px;
+  }
+
   ${Social}:hover & {
     transform: translateY(-4px);
+    color: #ff005a;
     box-shadow: 0 0 22px rgba(255, 0, 90, 0.2);
   }
 `;

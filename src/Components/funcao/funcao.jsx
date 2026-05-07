@@ -6,10 +6,9 @@ export default function Funcao() {
       <Inner>
         <Header>
           <Kicker>O que eu faço</Kicker>
-          <Title>Quatro áreas. Uma entrega: resultado.</Title>
+          <Title>Ofereço Soluções Praticas e eficientes com desenvolvimento de Apps</Title>
           <Desc>
-            Eu construo experiências completas: sistemas que funcionam, edição que prende a atenção
-            e projetos técnicos que saem do papel.
+            Eu construo experiências completas: sistemas que funcionam, e projetos técnicos que saem do papel, e soluções focadas em performace.
           </Desc>
         </Header>
 
@@ -23,28 +22,14 @@ export default function Funcao() {
 
             <Bullets>
               <li>Landing pages de alta conversão</li>
-              <li>Sites para Lojas </li>
-              <li>Sistemas e telas com foco em UX(Figma)</li>
+              <li>Sites com integrações, perfeitas para seu negócio </li>
+              <li>Sistemas e telas da preferencia de cada cliente</li>
             </Bullets>
 
             <CardAction href="#contatos">Quero um orçamento →</CardAction>
           </Card>
 
-          <Card>
-            <Tag>Audiovisual</Tag>
-            <CardTitle>Edição que prende a atenção</CardTitle>
-            <CardDesc>
-              Edição de vídeo com Adobe Premiere, focada em retenção e impacto visual.
-            </CardDesc>
-
-            <Bullets>
-              <li>Cortes dinâmicos + ritmo</li>
-              <li>Legendas/efeitos para retenção</li>
-              <li>Storytelling e impacto visual</li>
-            </Bullets>
-
-            <CardAction href="#projetos">Ver portfólio de vídeo →</CardAction>
-          </Card>
+         
 
           <Card>
             <Tag>Eletrônica Digital</Tag>
